@@ -1,11 +1,16 @@
 import { useOktaAuth } from '@okta/okta-react'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import {useHistory} from 'react-router-dom'
+
+import config from '../../config/config'
 
 const Home = () => {
 	const { oktaAuth, authState } = useOktaAuth();
+	const history = useHistory()
 
-	const login = async () => oktaAuth.signInWithRedirect({originalUri: '/profile'});
-	const logout = async () => oktaAuth.signOut('/');
+	// const login = async () => oktaAuth.signInWithRedirect({originalUri: '/profile'});
+	const login = async () => history.push(config.paths.login)
+	const logout = async () => oktaAuth.signOut('/')
 
 	useEffect(() => {
 

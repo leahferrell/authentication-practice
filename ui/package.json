@@ -6,6 +6,7 @@
     "@craco/craco": "^6.3.0",
     "@okta/okta-auth-js": "^5.8.0",
     "@okta/okta-react": "^6.3.0",
+    "@okta/okta-signin-widget": "^5.13.0",
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -23,6 +24,7 @@
     "react-scripts": "4.0.3",
     "redux-logger": "^3.0.6",
     "sass": "^1.42.1",
+		"text-encoding": "^0.7.0",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
