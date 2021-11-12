@@ -18,6 +18,7 @@ module.exports = {
       'error',
       'unix'
     ],
+    'no-tabs': 2,
     quotes: [
       'error',
       'single'
