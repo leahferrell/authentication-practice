@@ -9,5 +9,5 @@ app.use(morgan('combined'))
 app.use(routes)
 
 app.listen(config.port, () => {
-	console.log(`Example app listening at http://localhost:${config.port}`)
+  console.log(`Example app listening at http://localhost:${config.port}`)
 })

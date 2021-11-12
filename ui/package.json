@@ -24,7 +24,7 @@
     "react-scripts": "4.0.3",
     "redux-logger": "^3.0.6",
     "sass": "^1.42.1",
-		"text-encoding": "^0.7.0",
+    "text-encoding": "^0.7.0",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
@@ -32,7 +32,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+		"lint": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.27.0"
   }
 }
